@@ -1,0 +1,11 @@
+- Author           : Yan Naing (naing.yan@gmail.com).
+- Date             : 13 July 2010
+- Project          : SimpleCompare
+- Description      : compare, Diff, Merge Program just like WinMerge and Kdiff3 for Windows
+- Development Tool : VS 2008
+- Language & Libs  : C#, WPF, .Net 3.5
+
+The main purpsoe was to compare two folders recursively and copy newer file between folders.
+
+--- TODO
+- Call external merge program(WinMerge) for different files.

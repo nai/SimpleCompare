@@ -3,16 +3,16 @@
     <Style x:Key="alternatingListViewItemStyle" TargetType="{x:Type ListViewItem}">
         <Style.Triggers>
             <DataTrigger Binding="{Binding Path=Status}" Value="Same">
-                <Setter Property="Background" Value="Lime" />
+                <Setter Property="Background" Value="PaleGreen" />
             </DataTrigger>
             <DataTrigger Binding="{Binding Path=Status}" Value="Diff">
-                <Setter Property="Background" Value="Red" />
+                <Setter Property="Background" Value="PaleVioletRed" />
             </DataTrigger>
             <DataTrigger Binding="{Binding Path=Status}" Value="SrcOnly">
-                <Setter Property="Background" Value="Cyan" />
+                <Setter Property="Background" Value="PaleTurquoise" />
             </DataTrigger>
             <DataTrigger Binding="{Binding Path=Status}" Value="DestOnly">
-                <Setter Property="Background" Value="RoyalBlue" />
+                <Setter Property="Background" Value="PaleGoldenrod" />
             </DataTrigger>
             <!-- setting up triggers for alternate background colors -->
             <!--<Trigger Property="ItemsControl.AlternationIndex" Value="1">
@@ -27,7 +27,7 @@
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="BorderBrush" Value="LightGray" />
         <Setter Property="HorizontalContentAlignment" Value="Stretch" />
-        <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+        <Setter Property="VerticalContentAlignment" Value="Stretch"/>        
     </Style>
 
     

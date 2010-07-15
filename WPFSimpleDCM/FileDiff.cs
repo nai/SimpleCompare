@@ -11,8 +11,8 @@ namespace WPFSimpleDCM
         internal static bool FileEquals(string fileName1, string fileName2)
         {
             // Check the file size and CRC equality here.. if they are equal...    
-            using (var file1 = new FileStream(fileName1, FileMode.Open))
-            using (var file2 = new FileStream(fileName2, FileMode.Open))
+            using (var file1 = new FileStream(fileName1, FileMode.Open, FileAccess.Read))
+            using (var file2 = new FileStream(fileName2, FileMode.Open, FileAccess.Read))
                 return StreamsContentsAreEqual(file1, file2);
         }
 

@@ -8,5 +8,20 @@
     <Setting Name="folderDest" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="IgnoreFolders" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;.git&lt;/string&gt;
+  &lt;string&gt;bin&lt;/string&gt;
+  &lt;string&gt;obj&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="IgnoreFiles" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;*.dll&lt;/string&gt;
+  &lt;string&gt;*.suo&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

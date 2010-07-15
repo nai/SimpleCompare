@@ -70,6 +70,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="frmIgnores.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Window1.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -86,6 +90,9 @@
   <ItemGroup>
     <Compile Include="FileDiff.cs" />
     <Compile Include="FolderDiff.cs" />
+    <Compile Include="frmIgnores.xaml.cs">
+      <DependentUpon>frmIgnores.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

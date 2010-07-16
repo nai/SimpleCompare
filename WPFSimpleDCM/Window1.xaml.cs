@@ -388,8 +388,8 @@ namespace WPFSimpleDCM
                             Environment.NewLine+"Src : " +FileDiffResult.BaseSrc + "\\" + res.FullName +
                             Environment.NewLine+"Dest : " +FileDiffResult.BaseDest + "\\" + res.FullName,
                             "Confirm Manual Merge",MessageBoxButton.OKCancel))
-                            taskExtMerge(FileDiffResult.BaseSrc + "\\" + res.FullName,
-                                   FileDiffResult.BaseDest + "\\" + res.FullName );
+                            taskExtMerge("\""+FileDiffResult.BaseSrc + "\\" + res.FullName+"\"",
+                                   "\"" + FileDiffResult.BaseDest + "\\" + res.FullName + "\"");
                     }
                 }
             }
